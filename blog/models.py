@@ -12,5 +12,6 @@ class Post(models.Model):
 # These are all properties of each post
 
     class Meta:
-        
+        ordering = {'-created'}
+
 
