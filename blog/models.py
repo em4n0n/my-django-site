@@ -8,3 +8,4 @@ class Post(models.Model):
     summary = models.CharField(max_length=300)
     content = models.TextField()
     published = models.BooleanField(default=True)
+    created = models.DateTimeField(auto_now_add=True)
