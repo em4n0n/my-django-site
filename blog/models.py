@@ -9,3 +9,8 @@ class Post(models.Model):
     content = models.TextField()
     published = models.BooleanField(default=True)
     created = models.DateTimeField(auto_now_add=True)
+# These are all properties of each post
+
+    class Meta:
+        
+
