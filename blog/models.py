@@ -7,3 +7,4 @@ class Post(models.Model):
     slug = models.SlugField(max_length=255, unique=True)
     summary = models.CharField(max_length=300)
     content = models.TextField()
+    published = models.BooleanField(default=True)
