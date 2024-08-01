@@ -12,6 +12,8 @@ class Post(models.Model):
 # These are all properties of each post
 
     class Meta:
-        ordering = {'-created'}
+        ordering = ['-created']
 
+        def __str__(self):
+            return self.name
 
