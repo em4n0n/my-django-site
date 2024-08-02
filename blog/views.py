@@ -5,3 +5,6 @@ from django.http import HttpResponse
 
 def index(request):
     return HttpResponse("Hey there.")
+
+def post(request):
+    return HttpResponse("I'm a single post page.")
