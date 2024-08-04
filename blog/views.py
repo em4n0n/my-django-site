@@ -6,7 +6,7 @@ from .models import Post
 
 def index(request):
     posts = Post.objects.all()
-    return render(request, 'index.html', {})
+    return render(request, 'index.html', {'posts': posts})
 
 def post(request):
     return HttpResponse("I'm a single post page.")
